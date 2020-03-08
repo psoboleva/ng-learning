@@ -1,0 +1,32 @@
+<header>
+    <a routerLink="/">
+      <strong class="app-title">P<span>hoto</span>S</strong>
+      <span class="app-subtitle">ng-learning exercise by Polina Soboleva</span>
+    </a>
+    <nav class="main">
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="home-link"
+        routerLinkActive="active-link"
+      >
+        <span>Home</span>
+      </a>
+      <a
+        routerLink="/galleries"
+        routerLinkActive="active"
+        class="collections-link"
+        routerLinkActive="active-link"
+      >
+        <span>Photo collections</span>
+      </a>
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+        class="about-link"
+        routerLinkActive="active-link"
+      >
+        <span>Code explained</span>
+      </a>
+    </nav>

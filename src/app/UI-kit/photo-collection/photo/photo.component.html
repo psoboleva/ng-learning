@@ -1,0 +1,8 @@
+<img
+      src="{{photo.thumbnailUrl}}"
+      (click)="handleClick(photo.id)"
+      (load)="photoIsLoaded()"
+      [class.loading]="loading"
+/>
+<div class="title">{{photo.title}}</div>
+<div *ngIf="loading" class="loader"></div>

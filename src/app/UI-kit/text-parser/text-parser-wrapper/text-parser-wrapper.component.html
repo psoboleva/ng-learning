@@ -1,0 +1,17 @@
+<div class="text-parser-wrapper-sidebar">
+  <app-headings-to-sidebar
+    *ngIf="!loading"
+    [text]="text"
+    [headingNumber]="headingNumber"
+  >
+  </app-headings-to-sidebar>
+</div>
+<div class="text-parser-wrapper-main">
+  <app-headings-to-sections
+    *ngIf="!loading"
+    [text]="text"
+    [headingNumber]="headingNumber"
+  >
+  </app-headings-to-sections>
+</div>
+

@@ -1,0 +1,26 @@
+.notification {
+    border-radius: 3px;
+    margin: 7px;
+    padding: 7px;
+    color: white;
+    display: none;
+    h3 {
+        padding: 0;
+    }
+    &.success {
+        background: #048528;
+        display: block;
+    }
+    &.error {
+        background: #f5582c;
+        display: block;
+    }
+    &.warning {
+        background: #f80;
+        display: block;
+    }
+    &.info {
+        background: #888;
+        display: block;
+    }
+}

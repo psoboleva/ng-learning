@@ -1,0 +1,6 @@
+<div *ngIf="notification" class="notification {{notification.type}}">
+    <h3 *ngIf="notification.title">
+        {{notification.title}}
+    </h3>
+    {{notification.message}}
+</div>

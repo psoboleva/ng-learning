@@ -1,0 +1,22 @@
+header {
+    a {
+        text-decoration: none;
+        &:active, &:hover {
+            text-decoration: none !important;
+        }  
+    }
+    .app-title {
+        color: $secondary;
+        margin-right: 1em;
+        span {
+            opacity: 0.6;
+        }
+    }
+    .app-subtitle {
+        color: $secondary;
+        opacity: 0.3;
+    }
+    @media screen and (max-width: $screen-s) {
+        .app-subtitle { display: none; }
+    }
+}

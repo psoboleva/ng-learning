@@ -1,0 +1,17 @@
+<div *ngIf="sections" class="headings-to-sections-main">
+    <div *ngFor="let section of sections" class="section">
+        <a [name]="section.anchor">&nbsp;</a>
+        <h1 *ngIf="headingNumber===1" [innerHTML]="section.title"></h1>
+        <h2 *ngIf="headingNumber===2" [innerHTML]="section.title"></h2>
+        <h3 *ngIf="headingNumber===3" [innerHTML]="section.title"></h3>
+        <h4 *ngIf="headingNumber===4" [innerHTML]="section.title"></h4>
+        <h5 *ngIf="headingNumber===5" [innerHTML]="section.title"></h5>
+        <h6 *ngIf="headingNumber===6" [innerHTML]="section.title"></h6>
+        <app-headings-to-sections
+          [text]="section.content"
+          [headingNumber]="nextHeading"
+        >
+        </app-headings-to-sections>
+    </div>
+</div>
+<div *ngIf="!sections" [innerHTML]="text | safeHtml"></div>

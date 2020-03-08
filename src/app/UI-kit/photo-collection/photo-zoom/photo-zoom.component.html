@@ -1,0 +1,18 @@
+<div class="photo-zoom" *ngIf="selectedPhoto | async">
+  <div class="cover" (click)="zoomOut()">
+    <a class="zoom-out"><span>back</span></a>
+    <img [src]="(selectedPhoto | async).photoUrl" [class.loading]="loading" (load)="photoIsLoaded()">
+    <div *ngIf="loading" class="loader"></div>
+  </div>
+  <div class="photo-zoom-info" [class.open]="open">
+    <a class="info-open" (click)="openInfo()">
+      <span>info</span>
+    </a>
+    <a class="info-close" (click)="closeInfo()">
+      <span>close</span>
+    </a>
+    <h3 *ngIf="(selectedPhoto | async).title">{{(selectedPhoto | async).title}}</h3>
+    <h4 *ngIf="(selectedPhoto | async).subtitle">{{(selectedPhoto | async).subtitle}}</h4>
+    <div *ngIf="(selectedPhoto | async).description">{{(selectedPhoto | async).description}}</div>
+  </div>
+</div>

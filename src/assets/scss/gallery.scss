@@ -1,0 +1,96 @@
+.collection {
+    
+    .photo {
+      .title {
+        background: rgba($base-darker, 0.7) !important;
+      }
+    }
+}
+.galleries-list {
+    .collection {
+        .photo {
+            height: 40vh;
+            margin: 10px;
+            .title {
+                display: block !important;
+            }
+        }
+    }
+    @media screen and (max-width: $screen-s) {
+        .collection {
+            display: block !important;
+            .photo {
+                margin: unset;
+                height: unset;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+.all-collections {
+    float: right;
+    position: relative;
+    display: block;
+    padding-right: 1.8em;
+
+    &:before {
+        @extend %icon-arrow-right;
+        font-family: 'typicons';
+        position: absolute;
+        right: 0;
+        font-size: 1.5em;
+    }
+}
+.home-gallery {
+    .all-collections {
+        top: 2.6em;
+    }
+}
+.photo-zoom {
+    a {
+        &:hover { opacity: 0.6; }
+    }
+    .zoom-out {
+        span { display: none; }
+        &:before {
+            @extend %icon-arrow-left;
+            font-family: 'typicons';
+            font-size: 2em;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .photo-zoom-info {
+        color: $base;
+        h2, h3, h4 {
+            color: $base;
+        }
+        .info-open {
+            span { display: none; }
+            &:before {
+                @extend %icon-info-large;
+                font-family: 'typicons';
+                font-size: 2em;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .info-close {
+            span { display: none; }
+            &:before {
+                @extend %icon-times;
+                font-family: 'typicons';
+                font-size: 1.5em;
+                color: $base;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

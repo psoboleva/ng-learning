@@ -1,0 +1,18 @@
+$base: #21444f;
+$secondary: #bbb;
+$accent: #f09e07;
+
+$success: #048528;
+$danger: #f5582c;
+$warning: #f80;
+$info: #888;
+
+$base-darker: darken($base, 12%);
+$base-lighter: lighten($base, 15%);
+$accent-sublime: rgba($accent, 0.6);
+
+$screen-xl: 1920px;
+$screen-l: 1280px;
+$screen-m: 960px;
+$screen-s: 600px;
+$screen-xs: 480px;

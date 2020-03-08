@@ -1,0 +1,10 @@
+
+<h2 *ngIf="parent && parent.title">{{parent.title}} <span class="photos-number">({{photos.length}})</span></h2>
+<div *ngIf="parent && parent.description" class="parent-description">{{parent.description}}</div>
+<div class="collection">
+  <div class="photo" *ngFor="let photo of photos" [class.clickable]="handlePhotoClick || slideshow">   
+    <app-photo [photo]="photo" [handlePhotoClick]="handlePhotoClick" [slideshow]="slideshow"></app-photo>
+  </div>
+<div></div>
+</div>
+
