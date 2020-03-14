@@ -1,9 +1,9 @@
-import { storiesOf, moduleMetadata } from '@storybook/angular';
+import { moduleMetadata } from '@storybook/angular';
 import { NotificationsComponent } from '../app/UI-kit/notifications/notifications.component';
 import { errorNotification, successNotification } from '../app/UI-kit/notifications/notification.types';
 
 export default {
-  title: 'Notifications',
+  title: 'Components/Notifications',
   decorators: [
     moduleMetadata({
       declarations: [NotificationsComponent],
