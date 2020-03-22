@@ -11,8 +11,16 @@ export interface GetGalleryItems {
     },
     items: {
         [x: number]: {
-            data: any,
-            metadata: any,
+            data: {
+                ID: number,
+                post_title: string,
+                thumbnail: string,
+                guid: string,
+                post_content: string,
+                post_excerpt: string,
+                [x: string]: any,
+            },
+            [x: string]: any,
         }
     }
 }

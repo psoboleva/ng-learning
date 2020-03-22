@@ -5,7 +5,6 @@ import { TextParser } from '../text-parser';
 @Component({
   selector: 'app-headings-to-sections',
   templateUrl: './headings-to-sections.component.html',
-  styleUrls: ['./headings-to-sections.component.scss']
 })
 export class HeadingsToSectionsComponent implements OnInit {
 

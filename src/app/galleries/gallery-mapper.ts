@@ -25,7 +25,6 @@ export class GalleryMapper {
     mapGalleryItems(data: GetGalleryItems): GalleryItem[] {
         const items = [];
         const getItems = data.items;
-        console.log(data.items);
 
         for (let [key, value] of Object.entries(getItems)) {
             const fileName = value.data.guid.split('/').reverse()[0];
@@ -37,7 +36,6 @@ export class GalleryMapper {
                 title: value.data.post_title,
                 subtitle: value.data.post_excerpt || null,
                 description: value.data.post_content || null,
-                loading: true,
             });
             
         }
