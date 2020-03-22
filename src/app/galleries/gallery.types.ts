@@ -9,7 +9,10 @@ export interface GetGalleries {
     [x: number]: {
         ID: number,
         post_title: string,
-        thumbnail: boolean | string,
+        thumbnail: string,
+        guid: string,
+        post_content: string,
+        post_excerpt: string,
         [x: string]: any,
     }
 }

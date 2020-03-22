@@ -33,11 +33,9 @@ export class PhotoZoomComponent implements OnInit {
   }
   private openInfo(): void {
     this.open = true;
-    console.log(1);
   }
   private closeInfo(): void {
     this.open = false;
-    console.log(2);
   }
 
 }
